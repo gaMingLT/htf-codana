@@ -22,9 +22,9 @@
             <p>Smurfen Drank!</p>
         </div>
 
-        <div>
+        <!-- <div>
             <img id="funny" src="{{ asset('img/funny.jpg') }}" alt="">
-        </div>
+        </div> -->
 
         <a id="home_button" href="{{ route('home') }}">Try again!</a>
     </main>
