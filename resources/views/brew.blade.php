@@ -32,12 +32,16 @@
     <main>
         <button id="show" >Show Ingredients Tab</button>
         <div id="ingredients" class="hide">
-            <div>
-                <p id="ingr1">Ingredient 1</p>
+            <div id="container">
+                <div>
+                    <!-- <p id="ingr1">Ingredient 1</p> -->
+                    <img id="ingr1" src="{{ asset('img/basil.png') }}" alt="Ingredient 1 photo">
+                </div>
+                <div>
+                    <p id="ingr2">Ingredient 2</p>
+                </div>               
             </div>
-            <div>
-                <p id="ingr2">Ingredient 2</p>
-            </div>
+
         </div>
 
         <div id="mixing_pot" >
@@ -45,7 +49,7 @@
                 <p id="ingr1-mixing" class="hide">Ingredient 1 - Mixing</p>
             </div>
             <div>
-                <p id="ingr2-mixing" class="hide">Ingredient - Mixing</p>
+                <p id="ingr2-mixing" class="hide">Ingredient 2 - Mixing</p>
             </div> 
         </div>
 

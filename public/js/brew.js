@@ -12,7 +12,7 @@ function init() {
 
     document.querySelector("#ingr1").addEventListener("click",ingr1);
     document.querySelector("#ingr2").addEventListener("click", ingr2);
-
+    
 }
 
 function showIngredients() {

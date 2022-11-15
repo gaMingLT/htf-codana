@@ -4,3 +4,56 @@
 .hide {
     display: none;
 }
+
+#show {
+    padding: 0.5rem 0.5rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: chartreuse;
+}
+
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#container div, #mixing_pot div  {
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: 1xp solid seagreen;
+}
+
+#mixing_pot {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+#navigation {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#navigation a {
+    padding: 0.5rem 0.5rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+#home_button {
+    background-color: black;
+}
+
+#result_button {
+    background-color: teal;
+}
