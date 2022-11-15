@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('ingredients', function (Blueprint $table) {
             $table->id();
+            $tabe->string("name",50);
+            $table->integer("mixing_value");
             //TODO: ADD PROPERTIES
             $table->timestamps();
         });

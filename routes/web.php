@@ -15,8 +15,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+}) ->name('home');
 
 Route::get('/brew', function () {
     return view('brew');
-});
+}) -> name('brew');
+
+Route::get('/brew-result', function () {
+    return view('brew-result');
+}) -> name('brew-result');

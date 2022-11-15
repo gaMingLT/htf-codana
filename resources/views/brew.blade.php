@@ -8,6 +8,9 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/brew.css') }}" />
+
 
         <!-- Styles -->
         <style>
@@ -21,7 +24,38 @@
         </style>
     </head>
 <body>
-    <h1>Welcome to the brewing place!</h1>
-    
+    <header>
+        <h1>Welcome to the brewing place!</h1>   
+        <p>Here you will be able to combine ingredients & create your potions</p>
+    </header>
+
+    <main>
+        <button id="show" >Show Ingredients Tab</button>
+        <div id="ingredients" class="hide">
+            <div>
+                <p id="ingr1">Ingredient 1</p>
+            </div>
+            <div>
+                <p id="ingr2">Ingredient 2</p>
+            </div>
+        </div>
+
+        <div id="mixing_pot" >
+            <div>
+                <p id="ingr1-mixing" class="hide">Ingredient 1 - Mixing</p>
+            </div>
+            <div>
+                <p id="ingr2-mixing" class="hide">Ingredient - Mixing</p>
+            </div> 
+        </div>
+
+        <div id="navigation">
+            <a id="home_button" href="{{ route('home') }}">Back</a>
+            <a id="result_button" href="{{ route('brew-result') }}">Mix</a>
+        </div>
+
+    </main>
+
+    <script src="{{ asset('js/brew.js') }}"></script>
 </body>
 </html>
