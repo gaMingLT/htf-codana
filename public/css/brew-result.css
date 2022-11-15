@@ -1,0 +1,42 @@
+
+
+main a {
+    padding: 0.5rem 0.5rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+#home_button {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    background-color: black;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main div {
+    text-align: center;
+}
+
+main div p {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#potion {
+    height: 500px;
+    width: 500px;
+    border: 2px solid black;
+}
+
+
+#funny {
+    /* background-image: url('/public/img//funny.jpg');
+    background-size: cover; */
+}

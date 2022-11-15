@@ -31,27 +31,31 @@
 
     <main>
         <button id="show" >Show Ingredients Tab</button>
-        <div id="ingredients" class="hide">
-            <div id="container">
+        
+        <section>
+            <div id="ingredients" class="hide">
+                <div id="container">
+                    <div id="ingr1" >
+                        <img  src="{{ asset('img/basil.png') }}" alt="Ingredient 1 photo">
+                        <p>Basil</p>
+                    </div>
+                    <div id="ingr2" >
+                        <img src="{{ asset('img/chives.png') }}" alt="Ingredient 1 photo">
+                        <p>Chives</p>
+                    </div>               
+                </div>
+
+            </div>
+
+            <div id="mixing_pot" >
                 <div>
-                    <!-- <p id="ingr1">Ingredient 1</p> -->
-                    <img id="ingr1" src="{{ asset('img/basil.png') }}" alt="Ingredient 1 photo">
+                    <img id="ingr1-mixing" class="hide" src="{{ asset('img/basil.png') }}" alt="Ingredient 1 photo">
                 </div>
                 <div>
-                    <p id="ingr2">Ingredient 2</p>
-                </div>               
+                    <img id="ingr2-mixing" class="hide" src="{{ asset('img/chives.png') }}" alt="Ingredient 1 photo">
+                </div> 
             </div>
-
-        </div>
-
-        <div id="mixing_pot" >
-            <div>
-                <p id="ingr1-mixing" class="hide">Ingredient 1 - Mixing</p>
-            </div>
-            <div>
-                <p id="ingr2-mixing" class="hide">Ingredient 2 - Mixing</p>
-            </div> 
-        </div>
+        </section>
 
         <div id="navigation">
             <a id="home_button" href="{{ route('home') }}">Back</a>
